@@ -1,0 +1,60 @@
+# 🌍 World-Happiness ML Pipeline  
+&gt; End-to-end machine-learning service that turns raw World Happiness Report data into production-ready predictions.
+
+---
+
+## 🔍 Project Goal
+Deliver a **clean, reproducible ML pipeline** that predicts national **Ladder Score** (happiness) and returns an **audit-ready CSV** to business stakeholders.
+
+---
+
+## 🧪 Skills Demonstrated
+- **Data Ingestion**  – pandas, numpy  
+- **Data Cleaning**   – missing-value handling, outlier inspection  
+- **Feature Engineering** – standardisation with StandardScaler  
+- **Modelling**       – Gradient-Boosting Regressor (scikit-learn)  
+- **Evaluation**      – 5-fold CV, R², RMSE, MAE  
+- **Visualisation**   – seaborn, matplotlib (correlation, feature importance, actual-vs-predicted)  
+- **MLOps**           – scikit-learn Pipeline, ColumnTransformer, reproducible notebooks/scripts  
+- **Delivery**        – final CSV with predictions + performance report
+
+---
+
+## 🚀 Workflow (Job-Ready)
+| Step | Action |
+|------|--------|
+| 1 | Receive raw `WorldHappinessReport.csv` |
+| 2 | Drop rows with missing target or driver columns |
+| 3 | Split 80/20 stratified by year |
+| 4 | Build pipeline: `StandardScaler → GradientBoostingRegressor` |
+| 5 | Tune hyper-parameters with GridSearchCV |
+| 6 | Evaluate on hold-out set (R² ≈ 0.92, RMSE ≈ 0.35) |
+| 7 | Append `Predicted_Ladder_Score` to cleaned data |
+| 8 | Export `Cleaned_Happiness_With_Predictions.csv` |
+| 9 | Push code, visuals & CSV to repo for stakeholder review |
+
+---
+
+## 📊 Performance Snapshot
+- **R² (test)** = 0.92  
+- **RMSE (test)** = 0.35  
+- **Top driver** = Log GDP per capita (43 % importance)
+
+---
+
+## 📁 Deliverables
+- `pipeline.ipynb` – fully-commented Jupyter notebook  
+- `pipeline.py` – production script (CLI ready)  
+- `Cleaned_Happiness_With_Predictions.csv` – client-facing file  
+- `correlation_heatmap.png`, `feature_importance.png`, `actual_vs_predicted.png` – executive visuals
+
+---
+
+## 🛠 Tech Stack
+Python 3.11 | pandas | scikit-learn | seaborn | matplotlib | Jupyter
+
+---
+
+## 📬 Contact
+Want the same pipeline for **your** dataset?  
+📧 tanveerbrohi926@gmail.com
